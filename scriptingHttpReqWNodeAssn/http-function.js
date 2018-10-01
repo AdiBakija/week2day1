@@ -37,7 +37,13 @@ function printHTML (html) {//This is a callback function that logs the HTML cont
 
 var requestOptions = {
   host: 'sytantris.github.io',
-  path: '/http-examples/step4.html'
+  path: '/http-examples/step5.html'
 };
 
-getHTML(requestOptions, printHTML)
+//This is an export of all the functions and variables within this file
+//They can be accessed
+module.exports = {
+  requestOptions: requestOptions,
+  getHTML: getHTML,
+  printHTML: printHTML
+}
